@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+}
+
+h1{
+    background-color: #3E8914;
+    height: 6rem;
+    line-height: 6rem;
+    color: #E8FCCF;
+    font-size: 3rem;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.choices{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-left: 160px;
+}
+.robot{
+  margin-left: 200px;
+}
+.robot img{
+    width: 250px;
+}
+
+.robot .comp-choice{
+    width: 100px;
+    position: relative;
+    top: -307px;
+    left: -175px;
+   
+}
+
+#comp-paper{
+    left: -280px;
+}
+
+#comp-scissors{
+    left: -380px;
+}
+
+
+
+.score-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -350px;
+    gap: 5rem;
+    font-size: 2.4rem;
+}
+
+@media only screen and (max-width: 1811px) and (min-width: 1708px){
+    #comp-scissors{
+        left: -98px;
+        top: -386px;
+    }
+}
+@media only screen and (max-width: 1707px) and (min-width: 1604px){
+    #comp-scissors{
+        left: -101px;
+        top: -407px;
+    }
+
+    #comp-paper{
+        left: 0px;
+        top: -407px;
+    }
+}
+
+@media only screen and (max-width: 1603px) and (min-width: 1558px){
+    .robot .comp-choice{
+        top: -410px;
+    }
+
+    #comp-paper {
+        left: 0px;
+    }
+
+    #comp-stone {
+        left: 95px;
+    }
+    #comp-scissors {
+        left: -100px;
+    }
+
+}
+
+
+/* For Mobiles */
+@media only screen and ( min-width: 360px ) and ( max-width: 415px ){
+    body{
+        text-align: left;
+    }
+
+    h1{
+        text-align: left;
+        width: 100vh;
+        font-size: 2rem;
+        padding-left: 54px;
+    }
+
+    .choices{
+        display: flex;
+        flex-direction: column;
+        margin-left: -50px;
+    }
+
+    .user-choice img {
+        width: 121px;
+        margin-left: -148px;
+    }
+
+    .robot img {
+        position: relative;
+        width: 220px;
+        margin-top: -461px;
+        margin-left: 8px;
+}
+
+.score-card{
+    margin-left: 27px;
+    font-size: 3rem;
+}
+
+.robot .comp-choice {
+    width: 115px;
+    position: relative;
+    top: -267px;
+    left: 57px;
+}
+
+#comp-paper {
+    left: 58px;
+    top: -310px;
+}
+
+#comp-scissors {
+    left: 54px;
+    top: -330px;
+}
+}
+
+    
+
+/* Utilities */
+
+.hide{
+    visibility: hidden;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Stone Paper Scissors</h1>
+    <div class="choices">
+        <div class="user-choice" id="user-stone">
+            <img src="/img/stone.png" alt="Stone">
+        </div>
+        <div class="user-choice" id="user-paper">
+            <img src="/img/paper.png" alt="Paper">
+        </div>
+        <div class="user-choice" id="user-scissors">
+            <img src="/img/scissors.png" alt="Scissors">
+        </div>
+        <div class="robot">
+            <img src="/img/robot.jpg" alt="Comp" id="robot-img">
+            <img src="/img/comp-stone.png" alt="Stone" class="comp-choice hide" id="comp-stone">
+            <img src="/img/comp-paper.png" alt="Paper" class="comp-choice hide" id="comp-paper">
+            <img src="/img/comp-scissors.png" alt="Scissors" class="comp-choice hide" id="comp-scissors">
+
+        </div>
+    </div>
+    <div class="score-card">
+        <div class="user-score">
+            <p class="userScore">0</p>
+            <p>You</p>
+        </div>
+        <div class="comp-score">
+            <p class="compScore">0</p>
+            <p>Comp</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
